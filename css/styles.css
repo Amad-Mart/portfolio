@@ -1708,13 +1708,13 @@ pre code {
 .table-primary,
 .table-primary > th,
 .table-primary > td {
-  background-color: #edd2c7;
+  background-color: #c7dfed;
 }
 .table-primary th,
 .table-primary td,
 .table-primary thead th,
 .table-primary tbody + tbody {
-  border-color: #ddab98;
+  border-color: #98cddd;
 }
 
 .table-hover .table-primary:hover {
@@ -6075,7 +6075,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #bd5d38 !important;
+  background-color: #17a2b8 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9777,19 +9777,20 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #bd5d38 !important;
+  /* color: #3893bd !important; */
+  color: #17a2b8 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #824027 !important;
+  color: #276182 !important;
 }
 
 .text-secondary {
-  color: #6c757d !important;
+  color: #44627c !important;
 }
 
 a.text-secondary:hover, a.text-secondary:focus {
-  color: #494f54 !important;
+  color: #3b4a57 !important;
 }
 
 .text-success {
@@ -10021,8 +10022,8 @@ p.lead {
   text-transform: uppercase;
 }
 #sideNav .navbar-toggler:focus {
-  outline-color: #05aaeb;
-  /* outline-color: #03b3f8; */
+  /* outline-color: #05aaeb; */
+  outline-color: #03b3f8;
 }
 
 @media (min-width: 992px) {
