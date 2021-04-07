@@ -5,6 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
   <!-- TODO: check it out -->
   <meta name="description" content="" />
   <meta name="author" content="" />
@@ -52,12 +53,6 @@
           Amadeus
           <span class="text-primary">Martinez</span>
         </h1>
-        <!-- 
-        <div class="subheading mb-5">
-          <!-- TODO: Create the hire me button, a popup with contact info -->
-        <!-- (insert "hire me" button) -->
-        <!-- <a href="mailto:name@email.com">name@email.com</a> -->
-        <!-- </div> -->
 
         <!-- TODO: update this -->
         <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level
@@ -65,14 +60,15 @@
           value proposition.</p>
         <!-- TODO: add href=url, target="_blank" -->
         <div class="social-icons">
-          <a class="social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a class="social-icon" href="#linkedin"><i class="fab fa-linkedin-in"></i></a>
           <a class="social-icon" href="#"><i class="fab fa-github"></i></a>
           <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
+          <!-- Trigger/Open The Modal -->
+          <button id="myBtn" class="btn btn-primary" onclick="sweetAlert()">Hire Me!</button>
         </div>
         <!-- html for hire me button -->
         <div class="hire-me">
-          <!-- Trigger/Open The Modal -->
-          <button id="myBtn">Hire Me!</button>
+
 
           <!-- The Modal -->
           <div id="myModal" class="modal">
@@ -215,7 +211,8 @@
       <div class="resume-section-content">
         <!--TODO: update for yourself -->
         <h2 class="mb-5">Interests</h2>
-        <p>Apart from being a full-Stack developer, I enjoy most of my time being outdoors. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and
+        <p>Apart from being a full-Stack developer, I enjoy most of my time being outdoors. During the warmer months
+          here in Colorado, I enjoy mountain biking, free climbing, and
           kayaking.</p>
         <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows,
           I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements
@@ -277,6 +274,7 @@
   <!-- Third party plugin JS-->
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
   <!-- Core theme JS-->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script src="js/scripts.js"></script>
 </body>
 

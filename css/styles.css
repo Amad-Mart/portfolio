@@ -10083,6 +10083,10 @@ p.lead {
 .social-icons .social-icon:hover {
   background-color: #bd5d38;
 }
+/* TODO: figure out how to change hover icons to match logo */
+#linkedin{
+  background-color: #234ec5;
+}
 
 .dev-icons {
   font-size: 3rem;
