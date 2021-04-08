@@ -52,10 +52,37 @@ function sweetAlert() {
         //icon: 'success',
         width: 400,
         title: 'Get In Touch:',
-        text: `Email: Amadeusrm97@gmail.com \n
-        Phone: 470-422-5264`,
+        text: `Email: Amadeusrm97@gmail.com`,
         // padding: 20,
         showConfirmButton: false,
         //timer: 40000
+        /*
+         */
     });
 }
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+    .addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        btn.value = 'Sending...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_zfqx8i9';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                btn.value = 'Send Email';
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'Do you want to continue',
+                    icon: 'error',
+                    confirmButtonText: 'Cool'
+                })
+            }, (err) => {
+                btn.value = 'Send Email';
+                alert(JSON.stringify(err));
+            });
+    });
